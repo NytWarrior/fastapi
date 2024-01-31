@@ -23,6 +23,6 @@ def get_user(id:int,db: Session = Depends(get_db)):
     return user.show(id,db)
 
 
-@router.get('/', response_model=List[schemas.User])
-def all(db: Session = Depends(get_db)):
-    return user.get_all(db)
+# @router.get('/', response_model=List[schemas.User])
+# def all(db: Session = Depends(get_db)):
+#     return user.get_all(db)
